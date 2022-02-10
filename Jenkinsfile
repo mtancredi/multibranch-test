@@ -3,9 +3,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                nuovoBranch = params.tipoBranch+"/"+params.nomeBranch
-                echo $nuovoBranch
-
+                git checkout develop
+                git checkout -b params.tipoBranch+"/"+params.nomeBranch
             }
         }
     }
