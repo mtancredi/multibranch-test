@@ -6,12 +6,11 @@ pipeline {
                 sh '''
                     git checkout develop
                     git checkout -b "${tipoBranch}"/"${nomeBranch}"
-                    touch README.md
-                    git add README.md
+                    touch test.txt
                     git init
                     git config user.name "someone"
                     git config user.email "someone@someplace.com"
-                    git add *
+                    git add text.txt
                     git commit -m "test"
                     git push
                 '''
