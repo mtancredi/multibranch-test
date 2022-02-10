@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo "${nomeBranch}"+"_"+"${tipoBranch}"
+                newBranch = "${tipoBranch}"+"/"+"${nomeBranch}"
+                echo $newBranch
             }
         }
     }
