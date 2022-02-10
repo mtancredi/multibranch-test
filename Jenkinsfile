@@ -13,7 +13,8 @@ pipeline {
                     pwd
                     git add test.txt MyProject/src
                     git commit -m "test"
-                    git push
+                    git push --set-upstream origin "${tipoBranch}"/"${nomeBranch}"
+
                 '''
             }
         }
