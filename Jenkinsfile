@@ -6,7 +6,7 @@ pipeline {
                 sh '''
                     git checkout develop
                     git checkout -b "${tipoBranch}"/"${nomeBranch}"
-                    git branch -r
+                    git remote set-url origin https://mtancredi:emerasoft1@github.mtancredi.git
                 '''
             }
         }
