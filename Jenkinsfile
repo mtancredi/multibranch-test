@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo params.tipoBranch+"/"+params.nomeBranch
+                nuovoBranch = params.tipoBranch+"/"+params.nomeBranch
+                echo $nuovoBranch
 
             }
         }
