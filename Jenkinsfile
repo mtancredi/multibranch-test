@@ -10,6 +10,7 @@ pipeline {
                     git init
                     git config user.name "someone"
                     git config user.email "someone@someplace.com"
+                    pwd
                     git add text.txt
                     git commit -m "test"
                     git push
