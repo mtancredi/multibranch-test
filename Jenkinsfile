@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh '''
                     git checkout develop
-                    git checkout -b "${tipoBranch}"+"/"+"${nomeBranch}"
+                    git checkout -b "${tipoBranch}"/"${nomeBranch}"
                 '''
             }
         }
