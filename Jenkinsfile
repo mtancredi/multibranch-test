@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 git checkout develop
-                git checkout -b params.tipoBranch+"/"+params.nomeBranch
+                git checkout -b "${tipoBranch}"+"/"+"${nomeBranch}"
             }
         }
     }
