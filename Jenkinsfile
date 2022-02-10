@@ -6,7 +6,7 @@ pipeline {
                 sh '''
                     git checkout develop
                     git checkout -b "${tipoBranch}"/"${nomeBranch}"
-                    git push --set-upstream origin "${tipoBranch}"/"${nomeBranch}"
+                    git push origin "${tipoBranch}"/"${nomeBranch}"
                 '''
             }
         }
