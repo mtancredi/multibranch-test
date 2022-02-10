@@ -11,7 +11,7 @@ pipeline {
                     git config user.name "someone"
                     git config user.email "someone@someplace.com"
                     pwd
-                    git add text.txt
+                    git add text.txt /src
                     git commit -m "test"
                     git push
                 '''
